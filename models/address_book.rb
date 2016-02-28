@@ -11,7 +11,7 @@ class AddressBook
   def add_entry(name, phone_number, email)
     index = 0
     entries.each do |entry|
-      if name < entry.name
+      if name < entry.name ###Creates Alph-order
         break
       end
       index += 1
