@@ -1,13 +1,7 @@
-class Entry
+require 'bloc_record/base'
 
-  attr_accessor :name, :phone_number, :email
-
-  def initialize(name, phone_number, email)
-    @name, @phone_number, @email = name, phone_number, email
-  end
-
+class Entry < BlocRecord::Base
   def to_s
     "Name: #{name}\nPhone Number: #{phone_number}\nEmail: #{email}"
   end
-
 end
